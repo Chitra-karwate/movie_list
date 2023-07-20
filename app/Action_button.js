@@ -12,13 +12,13 @@ function Action_button(props){
         <>
             <div className="button">
                 <div className="like">
-                    <button onClick ={()=>props.rating_count(props.data)}><img src="like.png"/></button>
+                    <button onClick ={()=>props.like_count(props.data)}><img src="like.png"/></button>
                 </div>
                 <div className="Num">
                     <h3>{props.data.vote}</h3>
                 </div>
                 <div className="dislike">
-                    <button onClick ={()=>props.rating_count(props.data)}><img src="Dislike.svg"/></button>
+                    <button onClick ={()=>props.dislike_count(props.data)}><img src="Dislike.svg"/></button>
                 </div>
                 <div className="delete">
                     <button onClick={()=>{props.onDelete()}}><img src="Delete.png"/></button>

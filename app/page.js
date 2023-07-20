@@ -11,15 +11,25 @@ const Page=()=>{
 		setMovies_data(movie_data)
         
 	};
-    function rating_count(row_data){
+    function like_count(row_data){
         row_data.vote+=1
         const newArray=[...movies_data]
-        newArray.sort((a,b)=>b.vote -  a.vote)
+    
         setMovies_data(newArray)
         
-  }; 
+  };
+
+  function dislike_count(row_data){
+        row_data.vote-=1
+        const newArray=[...movies_data]
+        setMovies_data(newArray)
+        
+  };
 
 
+	
+
+	
   return (
         <>
             <Header/>
@@ -27,7 +37,8 @@ const Page=()=>{
                 <Movie_row 
                     data={item}
                     onDelete={()=>handleDelete(item.movie_name)}
-                    rating_count={rating_count}
+                    like_count={like_count}
+                    dislike_count={dislike_count}
                     
                 />
                 
