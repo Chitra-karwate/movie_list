@@ -26,7 +26,7 @@ const Page=()=>{
         newArray.sort((a,b)=>b.vote-a.vote)
         setMovies_data(newArray)
         
-    }
+    };
   	
   return (
         <>

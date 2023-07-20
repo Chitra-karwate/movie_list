@@ -1,4 +1,4 @@
-"use client"
+
 import React,{useState} from "react";
 function Action_button(props){
     const [count,setCount]=useState(0);
