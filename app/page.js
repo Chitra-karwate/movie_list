@@ -23,7 +23,7 @@ const Page=()=>{
         const newArray=[...movies_data]
         setMovies_data(newArray)
         
-  };
+  }
   	
   return (
         <>
