@@ -15,8 +15,7 @@ const Page=()=>{
         row_data.vote+=1
         const newArray=[...movies_data]
     
-        setMovies_data(newArray)
-        
+        setMovies_data(newArray)     
   };
 
   function dislike_count(row_data){
