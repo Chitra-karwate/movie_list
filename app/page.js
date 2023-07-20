@@ -26,9 +26,6 @@ const Page=()=>{
         
   };
 
-
-	
-
 	
   return (
         <>

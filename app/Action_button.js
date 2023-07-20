@@ -10,6 +10,7 @@ function Action_button(props){
     };
     return (
         <>
+       
             <div className="button">
                 <div className="like">
                     <button onClick ={()=>props.like_count(props.data)}><img src="like.png"/></button>
