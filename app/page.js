@@ -25,8 +25,7 @@ const Page=()=>{
         setMovies_data(newArray)
         
   };
-
-	
+  	
   return (
         <>
             <Header/>
