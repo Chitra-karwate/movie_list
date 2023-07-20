@@ -14,16 +14,19 @@ const Page=()=>{
     function like_count(row_data){
         row_data.vote+=1
         const newArray=[...movies_data]
+        newArray.sort((a,b)=>b.vote-a.vote)
+        
     
         setMovies_data(newArray)     
-  };
+    };
 
-  function dislike_count(row_data){
+    function dislike_count(row_data){
         row_data.vote-=1
         const newArray=[...movies_data]
+        newArray.sort((a,b)=>b.vote-a.vote)
         setMovies_data(newArray)
         
-  }
+    }
   	
   return (
         <>
